@@ -118,7 +118,9 @@ If you issue command `VACUUM big_cards;` and re-analyze you will likely see an e
 Record output below:
 
 ```
-
+QUERY PLAN
+`--SEARCH TABLE big_cards USING COVERING INDEX IDX2_big_cards (race=?)
+Run Time: real 0.036 user 0.000069 sys 0.034764
 ```
 
 #### The performance cost of Indexes 
