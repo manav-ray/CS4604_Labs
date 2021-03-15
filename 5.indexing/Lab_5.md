@@ -154,13 +154,15 @@ Now let's drop the indexes and try again:
 Record output below:
 
 ```
-
+QUERY PLAN
+`--SCAN TABLE big_cards
+Run Time: real 0.000 user 0.000050 sys 0.000070
 ```
 
 Does the update took less time without the indexes? 
 Your answer:
 ```
-
+No. There is a slight increase in execution time for the update without indexes.
 ```
 
 Describe your findings of this Lab 5 from the recorded outputs, is everything working fine? or is anything not working? etc. Please indicate your SQLite version:
