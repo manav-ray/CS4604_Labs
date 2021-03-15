@@ -120,7 +120,7 @@ Record output below:
 ```
 QUERY PLAN
 `--SEARCH TABLE big_cards USING COVERING INDEX IDX2_big_cards (race=?)
-Run Time: real 0.036 user 0.000069 sys 0.034764
+Run Time: real 0.060 user 0.000190 sys 0.058676
 ```
 
 #### The performance cost of Indexes 
@@ -138,7 +138,7 @@ Record output below:
 ```
 QUERY PLAN
 `--SCAN TABLE big_cards
-Run Time: real 0.000 user 0.000025 sys 0.000034
+Run Time: real 0.000 user 0.000133 sys 0.000000
 
 ```
 
@@ -156,7 +156,7 @@ Record output below:
 ```
 QUERY PLAN
 `--SCAN TABLE big_cards
-Run Time: real 0.000 user 0.000050 sys 0.000070
+Run Time: real 0.000 user 0.000072 sys 0.000032
 ```
 
 Does the update took less time without the indexes? 
@@ -170,8 +170,7 @@ Describe your findings of this Lab 5 from the recorded outputs, is everything wo
 ```
 SQLite version: 3.26.0 (From rlogin)
 Findings:
-Everything seems to be working fine. The presence of indeces seems to lower execution time for operations on large tables.
-
+Everything seems to be working fine. The presence of indeces seems to lower execution time for operations on large tables. I used .eqp ON to actually make sqlite execute the queries instead of just print out the explanation.
 ```
 
 ps. Use this command to check your SQLite version. `sqlite3 --version`
