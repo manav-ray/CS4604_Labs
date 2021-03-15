@@ -60,7 +60,7 @@ Record output below:
 ```
 QUERY PLAN
 `--SCAN TABLE big_cards
-Run Time: real 0.000 user 0.000000 sys 0.000000
+Run Time: real 0.001 user 0.000068 sys 0.000023
 ```
 
 #### Using Indexes to improve performance
