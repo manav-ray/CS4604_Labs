@@ -168,9 +168,9 @@ No. There is a slight increase in execution time for the update without indexes.
 Describe your findings of this Lab 5 from the recorded outputs, is everything working fine? or is anything not working? etc. Please indicate your SQLite version:
 
 ```
-SQLite version: 
+SQLite version: 3.26.0 (From rlogin)
 Findings:
-
+Everything seems to be working fine. The presence of indeces seems to lower execution time for operations on large tables.
 
 ```
 
