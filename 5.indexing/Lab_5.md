@@ -78,7 +78,7 @@ Record output below:
 ```
 QUERY PLAN
 `--SCAN TABLE big_cards
-Run Time: real 0.000 user 0.000000 sys 0.000000
+Run Time: real 0.000 user 0.000047 sys 0.000029
 ```
 
 You suspect that an index on the race column will help. Let's create it.
