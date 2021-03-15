@@ -92,7 +92,7 @@ Record output below:
 ```
 QUERY PLAN
 `--SEARCH TABLE big_cards USING INDEX IDX1_big_cards (race=?)
-Run Time: real 0.000 user 0.000083 sys 0.000026
+Run Time: real 0.001 user 0.000122 sys 0.000000
 ```
 
 Would it be possible to satisfy the query with an index only and further speed up the query?
